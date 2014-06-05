@@ -1,0 +1,23 @@
+# 自用
+
+
+## st 正则过滤
+
+    ^(\t/\*\*\n)[^{_]+public.+
+
+## 获取文件，并初始化
+
+    $file = '...\src\Illuminate\Mail\Mailer.php';
+    $md   = File::get($file);
+    preg_match_all('/^(\t\/\*\*\n\t \* )([^{_]+public.+ (\w+)\(.+)/m', $md, $ok);
+    $list = '<pre>';
+    foreach ($ok[2] as $key=>$value)
+    {
+        $list .= '<br /><br />&lt;a name="'.$ok[3][$key].'">&lt;/a><br />## ';
+        $list .= preg_replace(
+            array('/ \* /', '/\t \*\/\n/', '/\t \*/', '/\t/', '/public function /'),
+            array('', '', '', '    ', ''),
+            $value);
+    }
+    echo $list.'</pre>';
+    die;
