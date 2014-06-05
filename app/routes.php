@@ -32,12 +32,12 @@ if (isset($_GET['v']))
  */
 if ( ! Cookie::has('docs_version'))
 {
-	Cookie::queue('docs_versions', '4.1');
+	Cookie::queue('docs_versions', 'swift');
 }
 
 if ( ! defined('DOCS_VERSION'))
 {
-	define('DOCS_VERSION', Cookie::get('docs_version', '4.1'));
+	define('DOCS_VERSION', Cookie::get('docs_version', 'swift'));
 }
 
 /**
@@ -62,9 +62,9 @@ Route::get('/', function()
 /**
  * Documentation Routes...
  */
-Route::get('docs/dev', function()
+Route::get('docs/swift', function()
 {
-	Cookie::queue('docs_version', 'master', 525600);
+	Cookie::queue('docs_version', 'swift', 525600);
 
 	return Redirect::back();
 });
@@ -76,35 +76,13 @@ Route::get('docs/4-0', function()
 	return Redirect::back();
 });
 
-Route::get('docs/4-1', function()
-{
-	Cookie::queue('docs_version', '4.1', 525600);
-
-	return Redirect::back();
-});
-
-// 中文 4.1 文档
-Route::get('docs/4-1-cn', function()
-{
-	Cookie::queue('docs_version', '4.1-cn', 525600);
-
-	return Redirect::back();
-});
-
-// 中文 4.0 文档
-Route::get('docs/4-0-cn', function()
-{
-	Cookie::queue('docs_version', '4.0-cn', 525600);
-
-	return Redirect::back();
-});
 
 /**
  * Main Documentation Route...
  */
 Route::get('docs/{page?}', function($page = null)
 {
-	if (is_null($page)) $page = 'introduction';
+	if (is_null($page)) $page = 'about-swift';
 	$docPath = base_path('/docs/'.DOCS_VERSION.'/');
 	// 对中文文档的支持
 	ends_with(DOCS_VERSION, 'cn') AND $docPath = base_path('/docs/'.DOCS_VERSION.'/cn/');
@@ -129,21 +107,6 @@ Route::get('docs/{page?}', function($page = null)
 	return View::make('layouts.docs', compact('index', 'contents'));
 });
 
-// 本地化 JS 文件
-Route::get('js/run_prettify.js', array('as'=>'run_prettify.js', function()
-{
-	$path = public_path('assets/js');
-	View::addNamespace('js', $path);
-    return Response::view('js::run_prettify', array(), 200, array('Content-Type'=>'application/javascript'));
-}));
 
-// composer 中文文档
-include __DIR__.'/docRoutes/composer.php';
-
-// laravel 4.1 速查笔记
-include __DIR__.'/docRoutes/laravel-4-1-note.php';
-
-// PHP-PSR-代码标准中文版
-include __DIR__.'/docRoutes/php-psr.php';
 
 

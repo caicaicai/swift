@@ -14,9 +14,6 @@
         <!-- callto action -->
         <div id="callto" class="animated bounceInLeft">
             <a href="docs/quick" class="button large animated shake">Quickstart</a>
-<!--             <a href="{{ route('4.1-note') }}" class="button large animated shake">4.1-note</a>
-            <a href="{{ route('composer-cn') }}" class="button large animated shake">composer</a>
-            <a href="{{ route('psr') }}" class="button large animated shake">PSR</a> -->
         </div>
         <!-- /callto action -->
 
@@ -36,10 +33,10 @@
         <ul>
             <li class="current-item"><a href="#">Welcome</a></li>
             <li><a href="docs" title="Documentation">Documentation</a></li>
-            <li><a href="api/{{ DOCS_VERSION }}" title="Laravel Framework API">API</a></li>
-            <li><a href="//github.com/laravel/laravel" title="Github">Github</a></li>
+            <!-- <li><a href="api/{{ DOCS_VERSION }}" title="Laravel Framework API">API</a></li> -->
+            <!-- <li><a href="//github.com/laravel/laravel" title="Github">Github</a></li> -->
             <li><a href="//forums.laravel.io/" title="Laravel Forums">Forums</a></li>
-            <li><a href="//twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            <!-- <li><a href="//twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li> -->
         </ul>
     </div>
 </nav>

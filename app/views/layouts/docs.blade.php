@@ -80,8 +80,8 @@ function is_active($name='')
                 <!-- version -->
                 <div id="version">
                     <ul class="nolist">
-                        <li{{ is_active('master') }}><a href="{{ url('docs/dev') }}" title="Dev">Dev</a></li>
-                        <li{{ is_active('master-cn') }}><a href="{{ url('docs/dev') }}" title="Dev">Dev-cn</a></li>
+                        <li{{ is_active('swift') }}><a href="{{ url('docs/swift') }}" title="0.91.1">Swift</a></li>
+                        <li{{ is_active('swift-cn') }}><a href="{{ url('docs/swift') }}" title="cn version">Swift-cn</a></li>
                     </ul>
                 </div>
                 <!-- /version -->
@@ -172,7 +172,7 @@ function is_active($name='')
     <!-- copyright -->
     <section id="copyright" class="textcenter">
         <div class="boxed">
-            <div class="animated slideInLeft">本网站之资源取自互联网，网站内容皆用于网友学习交流之所用。如果网站内容涉及侵权请联系站长，給予删除。 &copy; 版权所有 swift.xiaocaicai.com  2014-2099 </div>
+            <div class="animated slideInLeft">本网站之资源取自互联网，网站内容皆用于网友学习交流之所用。如果网站内容涉及侵权请联系站长。 &copy; 版权所有 swift.xiaocaicai.com  2014-2099 </div>
         </div>
     </section>
     <!-- /copyright -->

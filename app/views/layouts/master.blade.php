@@ -23,7 +23,7 @@
     <script src="{{ asset('/') }}assets/js/jquery-1.11.1.min.js"></script>
 
     <!-- prettyprint -->
-    <script src="{{ route('run_prettify.js') }}"></script>
+    <script src="{{ asset('/') }}assets/js/run_prettify.js"></script>
 
     <!-- load up our js -->
     <script src="{{ asset('/') }}assets/js/plugins.js"></script>
@@ -71,7 +71,7 @@
     <!-- copyright -->
     <section id="copyright" class="textcenter">
         <div class="boxed">
-            <div class="animated slideInLeft">本网站之资源取自互联网，网站内容皆用于网友学习交流之所用。如果网站内容涉及侵权请联系站长，給予删除。 &copy; 版权所有 swift.xiaocaicai.com  2014-2099 </div>
+            <div class="animated slideInLeft">本网站之资源取自互联网，网站内容皆用于网友学习交流之所用。如果网站内容涉及侵权请联系站长。 &copy; 版权所有 swift.xiaocaicai.com  2014-2099 </div>
         </div>
     </section>
     <!-- /copyright -->
