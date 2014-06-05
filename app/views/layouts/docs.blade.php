@@ -31,7 +31,7 @@ function is_active($name='')
     <script src="{{ asset('/') }}assets/js/jquery.js"></script>
 
     <!-- prettyprint -->
-    <script src="{{ route('run_prettify.js') }}"></script>
+    <script src="{{ asset('/') }}assets/js/run_prettify.js"></script>
 
     <!-- load up our js -->
     <script src="{{ asset('/') }}assets/js/plugins.js"></script>
@@ -72,9 +72,7 @@ function is_active($name='')
                 <!-- tagline -->
                 <div id="tagline">
                     <h1>
-                        <small>中文文档由
-                            <a href="http://www.golaravel.com" target="_blank" style="color:white;font-size:1.5em;">golaravel.com</a> 提供
-                        </small>
+                        Power By developer.apple.com
                     </h1>
                 </div>
                 <!-- /tagline -->
@@ -83,10 +81,7 @@ function is_active($name='')
                 <div id="version">
                     <ul class="nolist">
                         <li{{ is_active('master') }}><a href="{{ url('docs/dev') }}" title="Dev">Dev</a></li>
-                        <li{{ is_active('4.1') }}><a href="{{ url('docs/4-1') }}" title="4.1">4.1</a></li>
-                        <li{{ is_active('4.1-cn') }}><a href="{{ url('docs/4-1-cn') }}" title="4.1-cn">4.1-cn</a></li>
-                        <li{{ is_active('4.0') }}><a href="{{ url('docs/4-0') }}" title="4.0">4.0</a></li>
-                        <li{{ is_active('4.0-cn') }}><a href="{{ url('docs/4-0-cn') }}" title="4.0-cn">4.0-cn</a></li>
+                        <li{{ is_active('master-cn') }}><a href="{{ url('docs/dev') }}" title="Dev">Dev-cn</a></li>
                     </ul>
                 </div>
                 <!-- /version -->
@@ -98,13 +93,13 @@ function is_active($name='')
         <nav id="primary">
             <div class="boxed">
                 <div id="logo-head">
-                   <a href="{{ route('get /') }}"><img src="{{ asset('/') }}assets/img/logo-head.png" alt="Laravel" /></a>
+                   <a href="{{ route('get /') }}"><img src="{{ asset('/') }}assets/img/developer.png" alt="Laravel" /></a>
                 </div>
                 <ul>
                     <li><a href="{{ route('get /') }}">Welcome</a></li>
                     <li class="current-item"><a href="docs" title="Documentation">Documentation</a></li>
-                    <li><a href="{{ url('api') }}/{{ DOCS_VERSION }}" title="Laravel Framework API">API</a></li>
-                    <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                    <!-- <li><a href="{{ url('api') }}/{{ DOCS_VERSION }}" title="Laravel Framework API">API</a></li> -->
+                    <!-- <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li> -->
                     <li><a href="http://forums.laravel.io/" title="Laravel Forums">Forums</a></li>
                     <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
                 </ul>
@@ -146,13 +141,13 @@ function is_active($name='')
                 <!-- nav -->
                 <nav id="secondary">
                     <div id="logo-foot">
-                       <a href="{{ route('get /') }}"><img src="{{ asset('/') }}assets/img/logo-foot.png" alt="Laravel" /></a>
+                       <!-- <a href="{{ route('get /') }}"><img src="{{ asset('/') }}assets/img/logo-foot.png" alt="Laravel" /></a> -->
                     </div>
                     <ul>
                         <li><a href="{{ route('get /') }}">Welcome</a></li>
                         <li class="current-item"><a href="docs" title="Documentation">Documentation</a></li>
-                        <li><a href="api/{{ DOCS_VERSION }}" title="Laravel Framework API">API</a></li>
-                        <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                        <!-- <li><a href="api/{{ DOCS_VERSION }}" title="Laravel Framework API">API</a></li> -->
+                        <!-- <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li> -->
                         <li><a href="http://forums.laravel.io/" title="Laravel Forums">Forums</a></li>
                         <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
                     </ul>
@@ -177,7 +172,7 @@ function is_active($name='')
     <!-- copyright -->
     <section id="copyright" class="textcenter">
         <div class="boxed">
-            <div class="animated slideInLeft">Laravel is a trademark of Taylor Otwell. Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>. Website built with &hearts; <a href="//ikreativ.com" title="iKreativ" target="_blank">iKreativ</a>.</div>
+            <div class="animated slideInLeft">本网站之资源取自互联网，网站内容皆用于网友学习交流之所用。如果网站内容涉及侵权请联系站长，給予删除。 &copy; 版权所有 swift.xiaocaicai.com  2014-2099 </div>
         </div>
     </section>
     <!-- /copyright -->

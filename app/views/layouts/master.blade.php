@@ -3,10 +3,11 @@
 <html lang="en">
 
 <head>
-    <title>Laravel - The PHP framework for web artisans.</title>
+    <title>Swift Programming Language - Apple Developer</title>
 
     <!-- meta -->
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
     <meta name="author" content="iKreativ">
     <meta name="description" content="Laravel - The PHP framework for web artisans.">
@@ -19,7 +20,7 @@
     <link href="{{ asset('/') }}assets/css/style.css" rel="stylesheet">
 
     <!-- grab jquery from google cdn. fall back to local if offline -->
-    <script src="{{ asset('/') }}assets/js/jquery.js"></script>
+    <script src="{{ asset('/') }}assets/js/jquery-1.11.1.min.js"></script>
 
     <!-- prettyprint -->
     <script src="{{ route('run_prettify.js') }}"></script>
@@ -70,7 +71,7 @@
     <!-- copyright -->
     <section id="copyright" class="textcenter">
         <div class="boxed">
-            <div class="animated slideInLeft">Laravel is a trademark of Taylor Otwell. Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>. Website built with &hearts; <a href="//ikreativ.com" title="iKreativ" target="_blank">iKreativ</a>.</div>
+            <div class="animated slideInLeft">本网站之资源取自互联网，网站内容皆用于网友学习交流之所用。如果网站内容涉及侵权请联系站长，給予删除。 &copy; 版权所有 swift.xiaocaicai.com  2014-2099 </div>
         </div>
     </section>
     <!-- /copyright -->
