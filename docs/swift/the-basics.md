@@ -1,33 +1,41 @@
 # The basics
 
-- [Introduction](#introduction)
+- [Constants and Variables](#constants-and-variables)
 
 
 Swift is a new programming language for iOS and OS X app development. Nonetheless,
 many parts of Swift will be familiar from your experience of developing in C and
 Objective-C.
+
 Swift provides its own versions of all fundamental C and Objective-C types, including Int
 for integers; Double and Float for floating-point values; Bool for Boolean values; and String for
 textual data. Swift also provides powerful versions of the two primary collection types,
 Array and Dictionary, as described in Collection Types.
+
 Like C, Swift uses variables to store and refer to values by an identifying name. Swift also
 makes extensive use of variables whose values cannot be changed. These are known as
 constants, and are much more powerful than constants in C. Constants are used
 throughout Swift to make code safer and clearer in intent when you work with values that
 do not need to change.
+
 In addition to familiar types, Swift introduces advanced types not found in Objective-C.
 These include tuples, which enable you to create and pass around groupings of values.
 Tuples can return multiple values from a function as a single compound value.
+
 Swift also introduces optional types, which handle the absence of a value. Optionals say
 either “there is a value, and it equals x” or “there isn’t a value at all”. Optionals are
 similar to using nil with pointers in Objective-C, but they work for any type, not just
 classes. Optionals are safer and more expressive than nil pointers in Objective-C and are
 at the heart of many of Swift’s most powerful features.
+
 Optionals are an example of the fact that Swift is a type safe language. Swift helps you to
 be clear about the types of values your code can work with. If part of your code expects a
 String, type safety prevents you from passing it an Int by mistake. This enables you to catch
 and fix errors as early as possible in the development process.
-Constants and Variables
+
+<a name="constants-and-variables"></a>
+#### Constants and Variables
+
 Constants and variables associate a name (such as maximumNumberOfLoginAttempts or
 welcomeMessage) with a value of a particular type (such as the number 10 or the string "Hello").
 The value of a constant cannot be changed once it is set, whereas a variable can be set
