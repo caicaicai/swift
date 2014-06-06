@@ -1,5 +1,3 @@
-# Artisan CLI
-
 - [Introduction](#introduction)
 - [Usage](#usage)
 
